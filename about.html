@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - GVFMI</title>
+    <meta name="description" content="Learn about Great Victory Forward Ministry International - Our vision, mission, and leadership">
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* About Page Specific Styles */
+        .about-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(5, 5, 5, 0.8), rgba(31, 30, 29, 0.8)), 
+                        url('flag.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            margin-top: 80px;
+        }
+        
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        .about-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(255, 190, 10, 0.918);
+        }
+        
+        .verse {
+            font-style: italic;
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .beliefs-section {
+            background: var(--white);
+        }
+        
+        .belief-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .belief-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border-top: 4px solid var(--gradient-primary);
+        }
+        
+        .belief-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .belief-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .belief-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+        
+        .leadership-section {
+            background: var(--light);
+        }
+        
+        .leader-profile {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 40px auto 0;
+        }
+        
+        .leader-img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: var(--shadow-hover);
+            margin: 0 auto;
+        }
+        
+        .leader-details {
+            text-align: left;
+        }
+        
+        .leader-details h3 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            color: var(--primary);
+            font-weight: bold;
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .leader-details {
+                text-align: center;
+            }
+            
+            .belief-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo-container">
+                    <img src="church logo.jpg" alt="GVFMI Logo" class="logo-img">
+                    <div class="logo-text">Great Victory <span>Forward</span></div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Our Story of Faith</h1>
+            <p class="verse">"Therefore, if anyone is in Christ, he is a new creation" <br>— 2 Corinthians 5:17</p>
+        </div>
+    </section>
+
+    <!-- ===== BELIEFS SECTION ===== -->
+    <section class="section beliefs-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Beliefs</h2>
+                <p>What we stand for and believe in</p>
+            </div>
+            
+            <div class="belief-cards">
+                <div class="belief-card">
+                    <div class="belief-icon"><i class="fas fa-cross"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>We exist to connect people to Jesus Christ, and to see people saved, healed, set free, discipled, equipped, empowered and serving.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon"><i class="fas fa-dove"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to lead people to become fully devoted followers of Christ, help people find God, grow their faith, discover their purpose and make a difference.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon"><i class="fas fa-bible"></i></div>
+                    <h3>Our Creed</h3>
+                    <p>I believe in one God, the father almighty, maker of heaven and earth, of all that is seen and unseen. I believe and trust in Jesus christ, our redeemer who saves us from sin and isolation to be joined together as children of God.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LEADERSHIP SECTION ===== -->
+    <section class="section leadership-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Leader</h2>
+                <p>Guided by God's wisdom and direction</p>
+            </div>
+            
+            <div class="leader-profile">
+                <div>
+                    <img src="pastor.jpg" alt="Apostle Enoch Ocansey" class="leader-img">
+                </div>
+                <div class="leader-details">
+                    <h3>Apostle Enoch Ocansey</h3>
+                    <p class="title">General Overseer</p>
+                    <p>With over 20 years of ministry experience, Apostle Ocansey has dedicated his life to spreading the Gospel and nurturing believers. His dynamic teaching and prophetic ministry have touched countless lives across Ghana and beyond.</p>
+                    <p>Apostle Ocansey is passionate about seeing people transformed by the power of God's Word and walking in their divine purpose.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Great Victory Forward Ministry International is committed to spreading the Gospel and nurturing believers in their faith journey.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1EFfg3qLLZ/?mibextid=qi2Omg" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@great.victory.for?_t=ZM-8vt9brV9bZm&_r=1" target="_blank" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/gvfmi" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/233552061090" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="ministries.html">Ministries</a>
+                    <a href="events.html">Events</a>
+                    <a href="give.html">Give</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Fetteh Mamfam, Kasoa, Ghana</p>
+                    <p><i class="fas fa-phone-alt"></i> +233 552 061 090</p>
+                    <p><i class="fas fa-envelope"></i> greatvictoryforwardministryint@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Service Times: Sun 7:20AM, Fri 6:30PM</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Great Victory Forward Ministry International. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            mobileMenuBtn.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
